@@ -12,6 +12,9 @@
            #loadingGif, #resultsSection{
                display: none;
            }
+           .w3-xlarge {
+               text-size: 1.5em !important;
+           }
         </style>
     </head>
 
@@ -42,7 +45,8 @@
                         <input class="w3-bar-item w3-input w3-centered" type="number" placeholder="Years for Repayment" id="userYearsRepaymentAmount">
                     </p>
                     <br>
-                    <button class="w3-button w3-round-xxlarge w3-deep-orange w3-hover-orange w3-hover-text-light-grey w3-xlarge w3-margin-top" style="width: 35%; text-shadow:3px 3px 10px rgba(114, 113, 113, 0.781);" id="calculateButton">Calculate</button>
+                    <button class="w3-button w3-round-xxlarge w3-deep-orange w3-hover-orange w3-hover-text-light-grey w3-xlarge w3-margin-top" style="text-shadow:3px 3px 10px rgba(114, 113, 113, 0.781);" id="calculateButton">Calculate</button>
+                    <!-- <button class="w3-button w3-round-xxlarge w3-deep-orange w3-hover-orange w3-hover-text-light-grey w3-xlarge w3-margin-top" style="width: 35%; text-shadow:3px 3px 10px rgba(114, 113, 113, 0.781);" id="calculateButton">Calculate</button> -->
                 </form>
             
                 <!-- Loader -->
@@ -51,7 +55,7 @@
                 </div> 
                     
 
-                    <!-- Results -->
+                <!-- Results -->
                 <div class="w3-panel" id="resultsSection">
                     <div class="w3-border-bottom w3-section w3-border-white"></div>
                     <h2 class="w3-text-white" style="text-shadow:1px 1px 4px rgba(114, 113, 113, 0.781)">Results</h2>
