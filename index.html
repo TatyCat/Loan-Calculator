@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Loan Calculator</title>
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+        <style>
+         
+            .shorterWidth6{
+                width:46%;
+            }
+            .center{
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body class="w3-flat-midnight-blue w3-center">
+        <header>
+            <div class="w3-container w3-xxxlarge w3-text-orange w3-white">
+                <h1 style="text-shadow:1px 1px 4px rgba(114, 113, 113, 0.781)">Loan Calculator</h1>
+            </div>  
+        </header>
+        <article>
+            <div class="w3-container">
+                
+                <div class="errorMessageBox"></div>
+                <!-- <div class="errorMessageBox">
+                    <h3 id="errorMessageText"></h3>
+                </div> -->
+
+                <form id="calculateLoan">
+                    <p class="w3-bar w3-border w3-round-large">
+                        <span class="w3-bar-item">$</span>
+                        <input class="w3-bar-item w3-input w3-border-left" type="text" placeholder="Loan Amount" id="userLoanAmount">
+                    </p>
+                    <br>
+                    <p class="w3-bar w3-border w3-round-large">
+                        <span class="w3-bar-item">%</span>
+                        <input class="w3-bar-item w3-input w3-border-left" type="text" placeholder="Loan Interest" id="userInterestAmount">
+                    </p>
+
+                    <br>
+                    <p class="w3-bar w3-border w3-round-large">
+                        <span class="w3-bar-item">YRs</span>
+                        <input class="w3-bar-item w3-input w3-centered" type="number" placeholder="Years for Repayment" id="userYearsRepaymentAmount">
+                    </p>
+                    <br>
+                    <button class="w3-button w3-round-xxlarge w3-deep-orange w3-hover-orange w3-hover-text-light-grey w3-xlarge w3-margin-top" style="width:35%" id="calculateButton">Calculate</button>
+                </form>
+            
+                    <!-- Loader -->
+                    <!-- <div id="loadingGif">
+                        <img src="images/loding.gif" class="w3-center w3-image w3-panel" style="width:7%; max-width:15%">
+                    </div> -->
+                    
+
+                    <!-- Results -->
+                <div class="w3-panel">
+                    <h2>Results</h2>
+                    <div class="w3-center">   
+
+                        <p class="w3-bar w3-border w3-round-large"> Monthly Payment
+                            <input class="w3-input w3-large w3-white centerInputText" type="number" placeholder="" id="resultMonthlyPaymentAmount">
+                        </p>
+                        <br>
+
+                        <p class="w3-bar w3-border w3-round-large"> Total Amount
+                            <input class="w3-input w3-large w3-white center" type="number" placeholder="" id="resultTotalPaymentAmount">
+                        </p>
+                        <br>
+                        <p class="w3-bar w3-border w3-round-large"> Total Interest
+                            <input class="w3-input w3-large w3-white centerInputText" type="number" placeholder="" id="resultTotalInterestAmount">
+                        </p>
+                        
+                    <br>
+                </div>
+            </div>
+        </article>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
