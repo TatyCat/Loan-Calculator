@@ -9,13 +9,9 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
         <style>
-         
-            .shorterWidth6{
-                width:46%;
-            }
-            .center{
-                margin: auto;
-            }
+           #loadingGif, #resultsSection{
+               display: none;
+           }
         </style>
     </head>
 
@@ -29,10 +25,7 @@
             <div class="w3-container">
 
                 <div class="errorMessageBox"></div>
-                <!-- <div class="errorMessageBox">
-                    <h3 id="errorMessageText"></h3>
-                </div> -->
-
+                
                 <form id="calculateLoan">
                     <p class="w3-bar w3-border w3-round-large">
                         <span class="w3-bar-item">$</span>
@@ -43,28 +36,26 @@
                         <span class="w3-bar-item">%</span>
                         <input class="w3-bar-item w3-input w3-border-left" type="text" placeholder="Loan Interest" id="userInterestAmount">
                     </p>
-
                     <br>
                     <p class="w3-bar w3-border w3-round-large">
                         <span class="w3-bar-item">YRs</span>
                         <input class="w3-bar-item w3-input w3-centered" type="number" placeholder="Years for Repayment" id="userYearsRepaymentAmount">
                     </p>
                     <br>
-                    <button class="w3-button w3-round-xxlarge w3-deep-orange w3-hover-orange w3-hover-text-light-grey w3-xlarge w3-margin-top" style="width:35%" id="calculateButton">Calculate</button>
+                    <button class="w3-button w3-round-xxlarge w3-deep-orange w3-hover-orange w3-hover-text-light-grey w3-xlarge w3-margin-top" style="width: 35%; text-shadow:3px 3px 10px rgba(114, 113, 113, 0.781);" id="calculateButton">Calculate</button>
                 </form>
             
-                    <!-- Loader -->
-                    <!-- <div id="loadingGif">
-                        <img src="images/loding.gif" class="w3-center w3-image w3-panel" style="width:7%; max-width:15%">
-                    </div> -->
+                <!-- Loader -->
+                <div id="loadingGif">
+                    <img src="images/loding.gif" class="w3-center w3-image" style="width:9%; margin-top: 4.5%; margin-bottom: 2%;">
+                </div> 
                     
 
                     <!-- Results -->
-                <div class="w3-panel">
+                <div class="w3-panel" id="resultsSection">
                     <div class="w3-border-bottom w3-section w3-border-white"></div>
-                    <h2 class="w3-text-white ">Results</h2>
+                    <h2 class="w3-text-white" style="text-shadow:1px 1px 4px rgba(114, 113, 113, 0.781)">Results</h2>
                     <div class="w3-center">   
-
                         <p class="w3-bar w3-border w3-round-large"> Monthly Payment
                             <input class="w3-input w3-large w3-white centerInputText" type="number" placeholder="" id="resultMonthlyPaymentAmount">
                         </p>
@@ -77,7 +68,6 @@
                         <p class="w3-bar w3-border w3-round-large"> Total Interest
                             <input class="w3-input w3-large w3-white centerInputText" type="number" placeholder="" id="resultTotalInterestAmount">
                         </p>
-                        
                     <br>
                 </div>
             </div>
